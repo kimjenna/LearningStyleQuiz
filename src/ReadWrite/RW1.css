@@ -1,0 +1,79 @@
+/* Main container */
+.container {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    height: auto; /* Allow height to adjust based on content */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px; /* Add some padding */
+    margin: 0;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+/* Title/Header */
+h1 {
+    font-size: 32px;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px; /* Space between title and content */
+    background-color: #add8e6; /* Remove background */
+    width: 100%; /* Full width */
+    text-align: center; /* Center the header text */
+}
+
+/* Content layout */
+.content {
+    display: flex;
+    justify-content: center; /* Center content */
+    align-items: flex-start;
+    width: 100%; /* Full width */
+    max-width: 1200px; /* Prevents it from being too wide */
+    gap: auto; /* Space between items */
+    flex-wrap: wrap; /* Allow wrapping */
+}
+
+/* Vocabulary list styling */
+.vocab-list {
+    display: grid; /* Use grid for three columns */
+    grid-template-columns: repeat(3, 1fr); /* Three equal columns */
+    gap: 10px; /* Space between items */
+    flex: 1; /* Take up available space */
+    text-align: center; /* Center text in cells */
+}
+
+/* Individual vocab item */
+.vocab-item {
+    padding: 15px; /* Padding for each item */
+    border: 1px solid #ddd; /* Optional: border for visual clarity */
+    border-radius: 5px; /* Optional: rounding */
+    background-color: white; /* No background */
+}
+
+/* Input area */
+.input-area {
+    width: 70%; /* Adjust width */
+    max-width: 800px; /* Max width for input area */
+    text-align: center;
+    display: block;
+    margin:  auto; /* Centering */
+    padding: 10px; /* Padding inside */
+    font-size: 16px;
+}
+
+/* Ensure content stacks on smaller screens */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center content */
+    }
+
+    .vocab-list {
+        grid-template-columns: 1fr; /* One column on small screens */
+    }
+
+    .vocab-item {
+        width: 100%; /* Full width for items on smaller screens */
+    }
+}

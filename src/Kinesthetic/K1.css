@@ -1,0 +1,75 @@
+/* K1.css */
+
+.drag-drop-game {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+.game-area {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin: 20px 0;
+}
+
+.english-words, .italian-words {
+    flex: 1;
+    margin: 0 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.word-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 10px;
+}
+
+.word, .drop-zone {
+    width: 140px; /* Adjusted width */
+    height: 70px; /* Adjusted height */
+    padding: 10px;
+    margin: 5px 0;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    cursor: grab;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f9f9f9;
+    font-size: 30px;
+}
+
+.word:active {
+    cursor: grabbing;
+}
+
+.drop-zone {
+    border: 2px dashed #ccc;
+}
+
+.matched {
+    background-color: #d4edda;
+    border: 2px solid #28a745;
+    color: #155724;
+    cursor: not-allowed;
+}
+
+.incorrect {
+    background-color: #f8d7da;
+    border: 2px solid #dc3545;
+    color: #721c24;
+}
+
+.completion-message {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #28a745;
+    font-weight: bold;
+}

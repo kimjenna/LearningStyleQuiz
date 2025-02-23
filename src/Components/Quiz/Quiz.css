@@ -1,0 +1,79 @@
+html, body {
+    height: 100%; /* Ensure the body takes up the full height */
+    margin: 0; /* Remove default margin */
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.container { 
+    width: 70vw; /* Width of the container */
+    max-width: 700px; /* Max width */
+    background-color: white; /* Background color */
+    color: #262626; /* Text color */
+    display: flex; /* Flexbox layout */
+    flex-direction: column; /* Column layout */
+    align-items: center; /* Center items horizontally */
+    gap: 15px; /* Space between elements */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Padding inside the container */
+}
+
+.container hr { 
+    height: 2px; /* Height of horizontal rule */
+    border: none; /* No border */
+    background: #707070; /* Background color */
+}
+
+.container h2 { 
+    font-size: 27px; /* Font size for h2 */
+    font-weight: 500; /* Font weight */
+}
+
+.container ul { 
+    padding: 0; /* Remove default padding from ul */
+    margin: 0; /* Remove default margin from ul */
+    width: 100%; /* Full width of the container */
+}
+
+.container ul li { 
+    display: flex; /* Flexbox for item layout */
+    justify-content: flex-start; /* Align items to the left */
+    align-items: center; /* Center items vertically */
+    height: auto; /* Auto height */
+    padding-left: 15px; /* Left padding */
+    padding-top: 5px; /* Top padding */
+    padding-bottom: 5px; /* Bottom padding */
+    border: 1px solid #686868; /* Border */
+    border-radius: 8px; /* Rounded corners */
+    margin-bottom: 15px; /* Space between items */
+    font-size: 20px; /* Font size */
+    cursor: pointer; /* Pointer cursor */
+    width: 80%; /* Width of each list item */
+}
+
+.container button { 
+    margin: auto; /* Center button */
+    width: 250px; /* Button width */
+    background: #553f9a; /* Button background color */
+    color: #fff; /* Text color */
+    font-size: 25px; /* Font size */
+    font-weight: 500; /* Font weight */
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+}
+
+.container .index { 
+    margin: auto; /* Center index */
+    font-size: 18px; /* Font size */
+}
+
+.container .correct {
+    background: #dffff2; /* Correct answer background */
+    border-color: #00d397; /* Border color */
+}
+
+.container .wrong {
+    background: #FFEBEB; /* Wrong answer background */
+    border-color: #FF4A4A; /* Border color */
+}

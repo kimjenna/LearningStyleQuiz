@@ -1,0 +1,67 @@
+/* V1.css */
+
+.contv1 {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin-top: 20px;
+}
+
+h1 {
+    font-size: 24px; /* Adjust as needed for the title */
+}
+
+.pic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.english-box, .italian-box {
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    width: 300px; /* Adjust width as needed */
+    text-align: center;
+    background-color: #f9f9f9;
+    font-size: 40px; /* Increase font size for English and Italian words */
+}
+
+.italian-box img {
+    max-width: 200px;  /* Set max width */
+    max-height: 200px; /* Set max height */
+    display: block;
+    margin: 0 auto 10px; /* Center the image with a bottom margin */
+}
+
+
+
+/*
+.contv1 h1{
+    margin-top: 50px;
+    margin-left: 20px;
+    align-self: center;
+}
+
+.pic{
+    width: 150px;
+    margin: auto;
+    / margin-left: 50px;
+    margin-top: 20px; /
+    background: white;
+    color: #262626;
+    display: flex;
+    flex-direction: column;
+    / gap: 20px; /
+    border-radius: 10px;
+    padding: 40px 50px;
+    / display: inline-flex; /
+}
+
+
+
+.pic #pig{
+    height: 170px;
+}
+*/
