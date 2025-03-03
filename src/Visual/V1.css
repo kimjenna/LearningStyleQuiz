@@ -35,6 +35,12 @@ h1 {
     margin: 0 auto 10px; /* Center the image with a bottom margin */
 }
 
+.contv1 h2 {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #ffff;
+}
 
 
 /*

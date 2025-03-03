@@ -34,14 +34,20 @@ export function A1() {
     return (
         <div>
             <h1>Click to hear the word.</h1>
-            <button onClick={() => playAudio('apple')}>apple - mela</button>
-            <button onClick={() => playAudio('celery')}>celery - sedano</button>
-            <button onClick={() => playAudio('cake')}>cake - torta</button>
-            <button onClick={() => playAudio('rice')}>rice - riso</button>
-            <button onClick={() => playAudio('bread')}>bread - pane</button>
-            <button onClick={() => playAudio('cucumber')}>cucumber - cetriolo</button>
-            <div>
+
+            {/* Timer moved to the top right */}
+            <div className="timer-container">
                 <h2>Time Remaining: {minutes}:{seconds < 10 ? `0${seconds}` : seconds}</h2>
+            </div>
+
+            {/* Buttons in a vertical column */}
+            <div className="button-container">
+                <button onClick={() => playAudio('apple')}>apple - mela</button>
+                <button onClick={() => playAudio('celery')}>celery - sedano</button>
+                <button onClick={() => playAudio('cake')}>cake - torta</button>
+                <button onClick={() => playAudio('rice')}>rice - riso</button>
+                <button onClick={() => playAudio('bread')}>bread - pane</button>
+                <button onClick={() => playAudio('cucumber')}>cucumber - cetriolo</button>
             </div>
         </div>
     );

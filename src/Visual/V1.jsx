@@ -46,6 +46,7 @@ export function V1() {
     return (
         <div className='contv1'>
             <h1>Memorize the following words. You will see each word three times.</h1>
+            <h2>Round {loopCount + 1}</h2> {/* Display the current round */}
             <div className='pic'>
                 <div className='english-box'>{currentWord.english}</div>
                 <div className='italian-box'>
