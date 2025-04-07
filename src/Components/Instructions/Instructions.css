@@ -19,6 +19,16 @@
     background: #707070;
 }
 
+h1 {
+    font-size: 32px;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px; /* Space between title and content */
+    background-color: #add8e6; 
+    width: 100%; /* Full width */
+    text-align: center; /* Center the header text */
+}
+
 .cont h2{ 
     font-size:27px;
     font-weight: 500;
@@ -41,41 +51,3 @@
     background-color: #8163c8;
 }
 
-/* .cont ul li { 
-    display: flex;
-    align-items: center;
-    height: 70px;
-    padding-left: 15px;
-    border: 1px solid #686868;
-    border-radius: 8px;
-    margin-bottom: 20px;
-    font-size: 20px;
-    cursor: pointer; 
-} */
-/* 
-.cont button { 
-    margin: auto;
-    width: 250px;
-    background: #553f9a;
-    color: #fff;
-    font-size: 25px;
-    font-weight: 500;
-    border-radius: 8px;
-    cursor: pointer;
-
-}
-
-.cont .index { 
-    margin: auto;
-    font-size: 18px;
-}
-
-.cont .correct{
-    background: #dffff2;
-    border-color: #00d397;
-}
-
-.cont .wrong{
-    background: #FFEBEB;
-    border-color: #FF4A4A;
-} */

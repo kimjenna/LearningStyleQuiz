@@ -1,6 +1,7 @@
 import React, { useRef, useState } from 'react';
 import './Quiz.css';
 import { data } from '../../assets/data';
+import { Link } from 'react-router-dom';
 
 export function Quiz() {
     let [index, setIndex] = useState(0);
@@ -17,6 +18,12 @@ export function Quiz() {
     let option_array = [Option1, Option2, Option3, Option4];
 
     const learningStyles = ["Visual", "Auditory", "Kinesthetic", "Read/Write"];
+    const learningStyleLinks = {
+        "Visual": "/visual",
+        "Auditory": "/auditory",
+        "Kinesthetic": "/kinesthetic",
+        "Read/Write": "/read-write"
+    };
 
     const checkAns = (e, ans) => {
         if (!lock) {
@@ -63,9 +70,31 @@ export function Quiz() {
             .map((s, i) => (s === maxScore ? learningStyles[i] : null))
             .filter(Boolean); // Get all highest scoring learning styles
 
-        return dominantStyles.length === 1
-            ? `Your learning style is ${dominantStyles[0]}.`
-            : `You have a mixed learning style: ${dominantStyles.join(" & ")}.`;
+        if (dominantStyles.length === 1) {
+            return (
+                <>
+                    Your learning style is{" "}
+                    <Link to={learningStyleLinks[dominantStyles[0]]} className="learning-style-link">
+                        {dominantStyles[0]}
+                    </Link>.
+                </>
+            );
+        } else {
+            return (
+                <>
+                    You have a mixed learning style:{" "}
+                    {dominantStyles.map((style, i) => (
+                        <React.Fragment key={style}>
+                            {i > 0 && " & "}
+                            <Link to={learningStyleLinks[style]} className="learning-style-link">
+                                {style}
+                            </Link>
+                        </React.Fragment>
+                    ))}
+                    .
+                </>
+            );
+        }
     };
 
     return (
@@ -87,7 +116,7 @@ export function Quiz() {
             ) : (
                 <>
                     <h2>Quiz Completed!</h2>
-                    <h3>{getLearningStyle()}</h3> {/* Moved this above the scores */}
+                    <h3>{getLearningStyle()}</h3> {/* Learning style is now a clickable link */}
                     <hr />
                     <p>Visual: {score[0]} / 3 correct</p>
                     <p>Auditory: {score[1]} / 3 correct</p>

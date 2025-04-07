@@ -36,11 +36,17 @@ h1 {
 }
 
 .contv1 h2 {
-    font-size: 24px;
+    display: inline-block;
+    padding: 8px 16px;
+    font-size: 25px;
     font-weight: bold;
-    text-align: center;
-    background-color: #ffff;
+    background-color: #ffff; /* Soft blue background */
+    color: #000000; /* Matching blue text */
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
 }
+
 
 
 /*

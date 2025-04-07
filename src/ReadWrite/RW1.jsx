@@ -34,8 +34,8 @@ export function RW1() {
     return (
         <div className="container">
             <h1>
-                If you have a pencil and paper, write down the following Italian words and their English definitions.
-                If not, type them below.
+                Write down the following words and definitions, or
+                type them below.
             </h1>
 
             <div className="content">
