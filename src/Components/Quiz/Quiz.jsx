@@ -22,7 +22,7 @@ export function Quiz() {
         "Visual": "/visual",
         "Auditory": "/auditory",
         "Kinesthetic": "/kinesthetic",
-        "Read/Write": "/read-write"
+        "Read/Write": "/readwrite"
     };
 
     const checkAns = (e, ans) => {
